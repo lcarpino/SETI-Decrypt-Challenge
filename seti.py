@@ -1,3 +1,4 @@
+#!/usr/bin/env python3 
 
 import sys
 import numpy as np
@@ -27,7 +28,7 @@ c = 299792458 # speed of light in metres per second
 yr = 31557600 # number of seconds in a year
 au = 149597870700 # au in metres
 
-#
+# 
 
 try:
 	with open("SETI_message.txt") as inputdata:
@@ -64,7 +65,7 @@ nrow = data.shape[1]
 ncol = data.shape[0]
 
 fig = plt.figure(1)
-gs = gridspec.GridSpec(1, 7)
+gs = gridspec.GridSpec(nrow, ncol)
 plt.title('test')
 plt.axis('off')
 
